@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     include 'NavigationBar.php';
     include 'Footer.php'
     //The slideshow functionality is based on: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow_auto
@@ -18,23 +18,23 @@
 <div class="SlideshowImages">
 
     <div class="Images fade">
-    <img src="Images\1.png" style="width: 1175px">
+    <img src="Images\1.png" >
     </div>
 
     <div class="Images fade">
-    <img src="Images\5.png" style="width: 1175px">
+    <img src="Images\5.png" >
     </div>
 
     <div class="Images fade">
-    <img src="Images\8.png" style="width: 1175px">
+    <img src="Images\8.png" >
     </div>
 
     <div class="Images fade">
-    <img src="Images\14.png" style="width: 1175px">
+    <img src="Images\14.png" >
     </div>
 
     <div class="Images fade">
-    <img src="Images\19.png" style="width: 1175px">
+    <img src="Images\19.png" >
     </div>
 
 </div>
