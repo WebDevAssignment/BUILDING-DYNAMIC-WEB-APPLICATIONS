@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,7 +9,7 @@
 
 <body>
     <footer>
-        <div id="Footer">
+        <div id="Footer" style="width: 100%; text-align: center;">
             <ul>
             <li>
                 <br>Phone Us:
