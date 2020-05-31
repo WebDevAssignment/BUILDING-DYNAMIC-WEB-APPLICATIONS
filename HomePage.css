@@ -1,0 +1,50 @@
+body {
+    background-color: white;
+}
+.Images {
+    /*Height and width modifies webpage size?*/
+    display: none;
+    height: 259px;
+    width: 300px;
+}
+
+
+.SlideshowImages
+{
+    position: sticky;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade
+{
+    /*For Chrome*/
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}

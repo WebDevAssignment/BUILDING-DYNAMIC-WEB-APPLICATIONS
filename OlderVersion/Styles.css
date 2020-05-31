@@ -1,0 +1,61 @@
+#icon{
+    float: right;
+    max-width: 20px;
+    height: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-row-gap: 50px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 5px;
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111111;
+}
+
+#menuImage{
+    float: right;
+    height: 100px;
+    max-width: 100px;
+    transition: height 1s, max-width 1s;
+    transition-delay: 0.25s;
+}
+
+#menuImage:hover{
+    height: 300px;
+    max-width: 300px;
+}
+
+#itemImage{
+    height: 300px;
+    max-width: 300px;
+}

@@ -1,0 +1,29 @@
+        <h1>Our Menu</h1>
+
+
+        {% for category in categories %}
+            <h2>{{category.name}}</h2>
+            <div class="grid-container">
+                    {% for item in items %}
+                        {% if item.CategoryID == category.id %}
+                            <div class="grid-item">
+                                <div>
+                                    {% if customerID is defined %}
+                                        <br>
+                                            <a id="addFav" href="Menu.php?DishID={{item.DishID}}&CustomerID={{customerID}}&AddFav=1">
+                                                <img id="addFav" src="Heart.png" alt="Add to Favourites">
+                                            </a>
+                                    {% endif %}
+                                </div>
+                                <p><br>{{item.name}}<br>Price:&nbsp{{item.price}}€ <br> </p>
+                                <a href="ItemDesc.php?dish={{item.DishID}}">Item Description</a>
+                                <br><img id="menuImage" src="{{item.image}}" alt="{{item.name}}">
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+            </div>
+        {% endfor %}
+
+        <script src="" async defer></script>
+    </body>
+</html>

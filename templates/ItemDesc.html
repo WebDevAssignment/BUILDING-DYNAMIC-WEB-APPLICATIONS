@@ -1,0 +1,21 @@
+        <h1>{{dish.name}}</h1>
+
+        {% if flag==1 %}
+            <div>
+                <p>Item Description: {{dish.dishDesc}}<br>
+                Item Price: {{dish.price}}<br>
+                Image: <br><img id="itemImage" src="{{dish.image}}" alt="{{dish.name}}"></p>
+            </div>
+
+            {% if prev == "http://localhost/WebDevAssignment/Menu.php" %}
+                <a href="Menu.php">Back to Menu</a>
+            {% elseif prev == "http://localhost/WebDevAssignment/Favourites.php" %}
+                <a href="Favourites.php">Back to Favourites</a>
+            {% endif %}
+        {% else %}
+            <p>Dish does not exist</p>
+        {% endif %}
+
+        <script src="" async defer></script>
+    </body>
+</html>

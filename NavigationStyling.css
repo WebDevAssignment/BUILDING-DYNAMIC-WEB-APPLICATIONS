@@ -1,0 +1,50 @@
+header image
+{
+    height: 65px;
+    margin-left: 30px;
+}
+
+header
+{
+    background-color: cadetblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    /*box-shadow: 0 0 20px 0 lightgoldenrodyellow;*/
+}
+
+    header * /*"header *" means that the contents are referring to any element in the header*/
+    {
+        display: inline;
+    }
+
+    header li
+    {
+        margin: 30px
+    }
+
+        header li a 
+        {
+            color: lightgoldenrodyellow;
+            text-decoration: none;
+        }
+
+body
+{
+    height: 135vh;
+    font-family: serif;
+    margin-top: 80px;
+    padding: 20px;
+}
+
+main {
+    color: lightgoldenrodyellow;
+}
+
+
+
+

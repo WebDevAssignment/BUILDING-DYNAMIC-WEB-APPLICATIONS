@@ -1,0 +1,59 @@
+body
+{
+    background-color: white;
+    font-size: large;
+    color: black;
+}
+
+#description
+{
+    text-align: center;
+}
+
+.row
+{
+    width: 100%;
+    margin: 2% 2% 2% 2%;
+}
+    .row > label
+    {
+        width: 10%;
+        display: inline-block;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .row > input
+    {
+        width: 74%;
+    }
+
+fieldset
+{
+    margin: 2%;
+    border: double;
+    border-color: lightgoldenrodyellow;
+    background-color: cadetblue;
+}
+
+    fieldset > legend
+    {
+        font-size: large;
+        font-weight: bold;
+    }
+
+input:hover
+{
+    background-color: lightgoldenrodyellow;
+    border: double;
+    border-color: cadetblue;
+}
+
+button{
+    background-color: cadetblue;
+    border: double;
+    color: lightgoldenrodyellow;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: medium;
+
+}

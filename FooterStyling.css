@@ -1,0 +1,33 @@
+footer
+{
+    background-color: cadetblue;
+    position: fixed;
+    bottom: 0;
+    left: 0px;
+    right: 0px;
+    min-height: 80px;
+    display: flex;
+    
+    color: lightgoldenrodyellow;
+}
+
+footer * /*"header *" means that the contents are referring to any element in the header*/
+{
+    display: inline;
+    text-align: center;
+}
+
+footer li
+{
+    display: inline;
+    margin: 30px 
+}
+
+body
+{
+    height: 135vh;
+    font-family: serif;
+    margin-bottom: 80px;
+    padding: 20px;
+
+}

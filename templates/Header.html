@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <title>Chief of Beef</title>
+        <link rel="stylesheet" href="Styles.css">
+    </head>
+    <body>
+    
+        {% if loggedIn == false %}
+            <div id="NavBar">
+                <ul>
+                    <li><a href="HomePage.php">HOME</a></li>
+                    <li><a href="AboutPage.php">ABOUT US</a></li>
+                    <li><a href="Menu.php">MENU</a></li>
+                    <li><a href="Favourites.php">FAVOURITES</a></li>
+                    <li><a href="ContactPage.php">CONTACT US</a></li>
+                    <li><a href="Bookings.php">BOOK A TABLE</a></li>
+                    <li id="logButton"><a href="LoginPHP.php">LOG IN</a></li>
+                </ul>
+            </div>
+        {% elseif loggedIn == true %}
+            <div id="NavBar">
+                <ul>
+                    <li><a href="HomePage.php">HOME</a></li>
+                    <li><a href="AboutPage.php">ABOUT US</a></li>
+                    <li><a href="Menu.php">MENU</a></li>
+                    <li><a href="Favourites.php">FAVOURITES</a></li>
+                    <li><a href="ContactPage.php">CONTACT US</a></li>
+                    <li><a href="Bookings.php">BOOK A TABLE</a></li>
+                    <li class="dropdown">
+                        <a href="javascript:void(0)" class="dropbtn">
+                            <img id="logIcon" src="logIcon.png">
+                        </a>
+                        <div class="dropdown-content">
+                            <a href="ManageAccount.php">MANAGE ACCOUNT</a>
+                            <a href="HomePage.php?logout=1&loc={{location}}">LOG OUT</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        {% endif %}

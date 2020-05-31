@@ -1,0 +1,34 @@
+body {
+    background-color: white;
+    font-size: large;
+    color: black;
+}
+
+* {
+    text-align: center;
+    box-sizing: border-box;
+}
+
+a {
+    color: cadetblue;
+    text-decoration: none;
+}
+
+#aboutImage {
+    float: left;
+    width: 33.33%;/*This is specifically 33.33% because there are 3 photos, hence 100%/3*/
+    padding: 5px;
+}
+
+#aboutPhoto
+{
+    height: 425px;
+    width: 350px;
+}
+
+#founderInfo
+{
+    padding-top: 5%;
+}
+
+

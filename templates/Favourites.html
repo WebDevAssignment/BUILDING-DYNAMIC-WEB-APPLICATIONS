@@ -1,0 +1,31 @@
+{% if customerID is defined %}
+    {% if favLength > 0 %}
+
+        <h1>Your Favourite Dishes:</h1>
+
+        <div class="grid-container">
+            {% for fav in favs %}
+                <div class="grid-item">
+                    <p>{{fav.name}}<br> Price: {{fav.price}}€<br></p>
+                    <a href="ItemDesc.php?dish={{fav.DishID}}">Item Description</a><br>
+                    <a href="Favourites.php?DishID={{fav.DishID}}&CustomerID={{customerID}}&RemFav=1">Remove from Favourites</a><br>
+                    <img id="menuImage" src="{{fav.image}}" alt="{{fav.name}}">
+                </div>
+            {% endfor %}
+        </div>
+
+        {% if not emFav is defined %}
+            <a href="Favourites.php?emFav=0">Email Favourites List</a>
+        {% elseif emFav is defined and emFav==0 %}
+            <form method = "post" action = "Favourites.php?emFav=1">
+                Email to: <input type="text" name = "email" > <br>
+                <button type = "submit">Confirm</button>
+            </form>
+        {% endif %}
+
+    {% else %}
+        <p>You have no favourite dishes yet!</p>
+    {% endif %}
+{% else %}
+    <p>You need to be logged in to use this feature!</p>
+{% endif %}
