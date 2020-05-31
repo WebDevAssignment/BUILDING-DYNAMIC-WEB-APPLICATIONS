@@ -4,8 +4,8 @@ body {
 .Images {
     /*Height and width modifies webpage size?*/
     display: none;
-    height: 259px;
-    width: 300px;
+    width: 100%;
+    text-align: center;
 }
 
 
